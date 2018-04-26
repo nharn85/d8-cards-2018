@@ -38,6 +38,3 @@ sites/simpletest
 
 # Ignore SimpleTest multi-site environment.
 # simpletest
-
-# Ignore editor settings
-.idea

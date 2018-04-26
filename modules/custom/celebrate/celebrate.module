@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains celebrate.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function celebrate_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the celebrate module.
+    case 'help.page.celebrate':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom filter to replace a celebrate token.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
